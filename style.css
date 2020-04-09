@@ -1,14 +1,13 @@
 body {
    font-family: Arial, Helvetica, sans-serif;
-   background-size: 100% 100%;
+   background-size: 100% auto;
    width: 100vw;
    height: 100vh;
- }
- /* What kind of selector is this? */
+}
  .logo {
    width: 400px;
    height: 230px;
-   margin: 3% 10%;
+   margin: 10% 10%;
  }
  header {
    display: grid;
@@ -19,9 +18,8 @@ body {
    height: auto;
    width: 100%;
    display: grid;
-   grid-template-columns: 30% 40% 50%;
+   grid-template-columns: 30% 40% 30%;
  }
- /* This is an element within and element selector */ 
  nav {
    margin: 2% 1% 2%;
    height: 20%;
@@ -29,20 +27,17 @@ body {
    color: rgb(102, 99, 99);
    font-family: Helvetica, sans-serif;
    font-size: 25px;
-   font-weight: bold
+   font-weight: bold;
    border-radius: 25px;
    background: transparent;
    padding: 20px;
    text-align: center;
  }
  .has-border {
-   border-radius: 28px;
-   border: 2px solid rgba(151, 150, 148, 0.377);
    background: none;
    padding: 16px;
-   font-size: 28px;
-   font-weight: bolder;
-   font-style: italic;
+   font-size: 40px;
+   text-decoration: none;
    color: rgb(226, 168, 8)
  }
  nav {
@@ -51,7 +46,6 @@ body {
    width: 100%;
    padding-right: 2%;
  }
- /* This is an ID selector */
  #profile-pic {
    width: 300px;
    height: 500px;
@@ -60,6 +54,7 @@ body {
    grid-column: 2/3;
  }
  h1 {
+   font-size: 45px;
    color:rgba(221, 155, 13, 0.993);
    grid-column: 2/3;
    margin: 3% auto;
@@ -76,7 +71,7 @@ body {
    grid-column: 2/3;
    color: rgb(209, 154, 3);
    font-size: 10px;
-   margin: 3% auto;
+   margin: 10% auto;
  }
  button {
    grid-column: 2/3;
@@ -84,14 +79,39 @@ body {
    width: 40%;
    height: 3%;
    font-family: Arial, Helvetica, sans-serif;
-   font-size: 34px;
+   font-size: 40px;
    border-radius: 40px;
    background: rgba(0, 0, 0, 0.747);
-   padding: 20px;
+   padding: 15px;
    padding-bottom: 10%;
    text-align: center;
    color: rgba(207, 161, 9, 0.973);
-   letter-spacing: 3px;
+   letter-spacing: 5px;
    font-style: oblique;
    font-weight: bold;
  }
+ @media only screen and (max-width: 770px) {
+  body {
+    height:100%;
+    width: 100%;
+    background: 100%;
+  }
+  .logo {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  #profile-pic {
+    width: auto;
+    height: auto;
+  }
+}
+  @media only screen and (max-width: 350px) {
+    body {
+      height:100%;
+      width: 100%;
+      background: 100%;
+    }
+  }
