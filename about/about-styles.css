@@ -3,25 +3,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 1000px;
     width: 850px;
-    background-color: rgb(160, 158, 158);
     display: flex;
-    border: 1px solid black
+}
+.background-image {
+    height: 100%;
+    width: 100%;
+}
+main {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 20% 40% 40%;
 }
 h1 {
-    margin-top: 40px;
-
+    margin: auto;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 50px;
 }
 .history {
+    margin-left: 20%;
+    margin-right: 10%;
     grid-column: 2/4;
-    grid-row: 1/3;
-    display: flex;
-    flex-direction: row;
+    grid-row:2/3;
+    font-size: 20px;
 }
 .present-goals {
-    grid-column: 1/2;  
-    grid-row: 2/4;
-    display: flex;
-    flex-direction: row;
+    margin-left: 20%;
+    grid-column: 1/3;  
+    grid-row: 3/4;
+    font-size: 20px;
 }
 nav {
     height: 110%;
@@ -45,9 +55,9 @@ nav {
 
 
 
-
   
   @media only screen and (max-width: 770px) {
+
 
   }
 
