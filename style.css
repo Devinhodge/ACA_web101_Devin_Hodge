@@ -4,9 +4,6 @@ body {
    width: 100vw;
    height: 100vh;
 }
-.background-image {
-  position: fixed;
-}
  .logo {
    width: 400px;
    height: 230px;
