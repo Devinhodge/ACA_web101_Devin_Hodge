@@ -3,26 +3,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./contact-styles.css">
+    <link rel="javascript" href="contact-js.js">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <title>Contact Devin</title>
 </head>
 <body class="background-image" style="background: url(https://cdn.pixabay.com/photo/2017/08/06/07/45/people-2589998_960_720.jpg); background-size: 100% 100%">
-    <header>
-    </header>
-        <main>
-            <h1>Get In Touch</h1>
-                <section class="address">
-                    <ul>
-                        <li>6205 Shadow Bend</li>
-                        <li>Austin, TX 78745</li>
-                    </ul>
-                </section>
-                <section class="mail-number">
-                    <ul>
-                        <li>(512) 968-8689</li>
-                        <li>d.hodge8891@yahoo.com</li>
-                        <li>www.linkedin.com/in/devinhodge</li>
-                    </ul>
-                </section>
-        </main>            
+  <main>
+    <button class="open-button" onclick="openForm()">Get In Touch</button>
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <div>
+            <input type="text" placeholder="Enter Name" name="name" id="name">
+          </div>   
+          <div>
+            <textarea id="bio" placeholder="Type message" name="bio"></textarea>
+          </div>
+          <div> 
+            <label for="phone">Phone</label>
+            <input type="tel" placeholder="(***)***-***"name="phone" id="phone">
+          </div>
+          <div>
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date" min="1930-01-01">
+          </div>
+          <div>
+            <input type="text" placeholder="Enter Email" name="email" required>
+          </div>
+          <div>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </div>
+        </form>
+      </div>
+  </main>      
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>     
 </body>
 </html>
