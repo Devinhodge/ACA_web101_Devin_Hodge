@@ -24,6 +24,9 @@ main {
     height: auto;
     border-radius: 50%;
 }
+#flowers {
+    display: none;
+}
 h1 {
     margin: auto;
     grid-column: 1/3;
@@ -83,11 +86,10 @@ h1 {
         font-size: 14px;
     }
   @media only screen and (max-width: 475px) {
-
   #about-me-pic {
     display: none;
 }
-    h1 {
+  h1 {
       font-size: 30px;
       margin: auto;
 }
