@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 10px;
   font-family: Arial;
@@ -11,12 +10,10 @@ body {
   flex-wrap: wrap;
   padding: 4px 4px;
 }
-
 .column {
   max-width: 25%;
   padding: 10px 5px;
 }
-
 .column img {
   margin-top: 10px;
   vertical-align: middle;
@@ -60,16 +57,12 @@ body {
   opacity: 2;
   transform: translateY(165px);
   }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
