@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 10;
+  margin: 10px;
   font-family: Arial;
 }
 .row {
@@ -46,7 +46,7 @@ body {
   text-align: center;
   }
   .image .content:hover { 
-    margin-top: 8px;
+    margin-top: 10px;
     opacity: 1; 
     background: rgba(0, 0, 0, 0.5);
   }  
