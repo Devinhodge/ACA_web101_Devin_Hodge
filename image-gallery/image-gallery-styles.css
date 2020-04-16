@@ -93,7 +93,6 @@ body {
 .photo .box:hover .text {
   opacity: 2;
   transform: translateY(100px);
-
 }
 @media screen and (max-width: 800px) {
   .column {
