@@ -26,12 +26,19 @@ body {
   cursor: pointer;
   overflow: hidden;
 }
+.photo {
+  position: relative;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
 .content {
   opacity: .5;
   font-size: 25px;
   position: absolute;
   top: 0;
-  left: 5;
+  left: 0;
   color: #f7f8f8;
   width: 100%;
   height: 100%;
@@ -40,6 +47,21 @@ body {
   -o-transition: all 400ms ease-out;
   -ms-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
+  text-align: center;
+}
+.box {
+  opacity: .5;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f7f8f8;
+  width: 100%;
+  height: 100%;
+  -moz-transition: all 400ms ease-in;
+  -o-transition: all 400ms ease-in;
+  -ms-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
   text-align: center;
 }
 .image .content:hover { 
@@ -56,6 +78,22 @@ body {
 .image .content:hover .text {
   opacity: 2;
   transform: translateY(165px);
+}
+.photo .box:hover { 
+  margin-top: 10px;
+  opacity: 1; 
+  background: rgba(0, 0, 0, 0.5);
+}
+.photo .box .text {
+  height: 0;
+  opacity: 0;
+  transition-delay: 0s;
+  transition-duration: 0.8s;
+}
+.photo .box:hover .text {
+  opacity: 2;
+  transform: translateY(100px);
+
 }
 @media screen and (max-width: 800px) {
   .column {
