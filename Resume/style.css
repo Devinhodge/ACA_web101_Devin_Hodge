@@ -13,7 +13,18 @@ h1 {
     text-align: center;
     margin-top: 60px;
     font-size: 60px;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 0.4;
+    transition: 0.5s;
 }
+h1:hover {
+    opacity: 1
+}
+
 .address {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -24,6 +35,9 @@ h1 {
 }
 ul {
     list-style-type: none;
+}
+#number {
+    display: none;
 }
 .discription {
     grid-column: 2/3;
