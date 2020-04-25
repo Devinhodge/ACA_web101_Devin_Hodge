@@ -1,26 +1,36 @@
 
 main {
-    border: dashed black;
+    border: dashed rgba(245, 183, 14, 0.623);
     margin: auto;
     height: auto;
     width: 850px;
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 20% 20% 5% 55%;
+    grid-template-rows: 20% 20% 60%;
 }
 h1 {
     grid-column: 2/3;
     text-align: center;
     margin-top: 60px;
-    font-size: 60px;
+    font-size: 65px;
     border: none;
-    color: black;
     padding: 16px 32px;
     text-align: center;
     opacity: 0.2;
     transition: 0.5s;
+    color:  black;
 }
 h1:hover {
+    opacity: 1
+}
+img {
+    margin-top: 50px;
+    border: none;
+    text-align: center;
+    opacity: 0;
+    transition: 0.8s;
+}
+img:hover {
     opacity: 1
 }
 .address {
@@ -37,12 +47,26 @@ ul {
     list-style-type: none;
 }
 #myNumber {
+    font-weight: bold;
+    font-size: 25px;
     display: none;
 }
 button {
     height: 38px;
     width: 150px;
     margin-top: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    background: rgba(241,231,103,1);
+    background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(179,107,0,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(179,107,0,1)));
+    background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgb(192, 115, 0) 100%);
+    background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(179,107,0,1) 100%);
+    background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(179,107,0,1) 100%);
+    background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(179,107,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#b36b00', GradientType=1 );
+    border: none;
 }
 .discription {
     grid-column: 2/3;
@@ -57,47 +81,45 @@ button {
     font-size: 25px;
 }
 .college {
-    margin-right: 14px;
+    margin-right: 35px;
     grid-column: 3/4;
     grid-row: 2/3;
-    text-align: center;
+    text-align: end;
     line-height: 1.4;
     font-size: 18px;
 }
 .college h4 {
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 35px;
     text-align: center;
     font-size: 25px;
 }
-.skillz {
+h5 {
+    font-size: 20px;
     margin-top: 30px;
     grid-column: 1/2;
     grid-row: 3/4;
-    font-size: 40px;
+    font-size: 23px;
     text-align: center;
 }
-.proff {
+h6 {
     margin-top: 6px;
     grid-column: 2/4;
     grid-row: 3/4;
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
 }
 .experience {
     margin: 50px auto;
     grid-column: 1/2;
-    grid-row: 4/5;
+    grid-row: 3/4;
     text-align: center;
     font-size: 18px;
-}
-h5 {
-    font-size: 20px;
 }
 .jobs {
     margin: 50px auto;
     grid-column: 2/4;
-    grid-row: 4/5;
+    grid-row: 3/4;
     line-height: 1.4;
     font-size: 18px;
 }
@@ -105,4 +127,23 @@ h5 {
     font-size: 25px;
     text-decoration: underline;
 }
-@media 
+@media only screen and (max-width: 500px) {
+    main {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img {
+        display: none;
+    }
+    .address {
+        margin: auto;
+    }
+    .college {
+        margin: auto;
+        text-align: center;
+    }
+    .discription {
+        margin-left: auto;
+    }
+}
